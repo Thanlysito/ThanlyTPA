@@ -2,6 +2,14 @@
 
 A clean, fully configurable **TPA plugin for Paper 1.21.x** with inventory menus, clickable chat buttons and a teleport delay.
 
+## Screenshots
+
+![Clickable accept / deny buttons in chat](docs/chat-buttons.png)
+
+![Teleport countdown](docs/countdown.png)
+
+![Requests menu](docs/requests-menu.png)
+
 ## Features
 - `/tpa` and `/tpahere` with **player-head menus** (run them without a name).
 - **Clickable `[ACCEPT]` / `[DENY]` buttons** in chat, with hover text.

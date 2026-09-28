@@ -10,7 +10,8 @@ public record Settings(
         boolean cancelOnDamage,
         int requestTimeout,
         int requestCooldown,
-        boolean sounds
+        boolean sounds,
+        boolean testSelf
 ) {
 
     public static Settings from(FileConfiguration config) {
@@ -21,7 +22,8 @@ public record Settings(
                 config.getBoolean("cancel-on-damage", true),
                 Math.max(5, config.getInt("request-timeout", 60)),
                 Math.max(0, config.getInt("request-cooldown", 10)),
-                config.getBoolean("sounds", true)
+                config.getBoolean("sounds", true),
+                config.getBoolean("test-mode-self-requests", false)
         );
     }
 }

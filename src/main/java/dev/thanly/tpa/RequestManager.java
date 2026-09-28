@@ -31,7 +31,7 @@ public final class RequestManager {
     public void send(Player sender, Player target, TpaRequest.Type type) {
         Messages msg = plugin.messages();
         Settings cfg = plugin.settings();
-        if (sender.getUniqueId().equals(target.getUniqueId())) {
+        if (sender.getUniqueId().equals(target.getUniqueId()) && !cfg.testSelf()) {
             msg.send(sender, "cannot-self");
             return;
         }

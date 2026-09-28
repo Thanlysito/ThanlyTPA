@@ -32,7 +32,7 @@ public final class MenuManager {
         Messages msg = plugin.messages();
         List<Player> others = new ArrayList<>();
         for (Player p : Bukkit.getOnlinePlayers()) {
-            if (!p.getUniqueId().equals(viewer.getUniqueId()) && viewer.canSee(p)) {
+            if ((plugin.settings().testSelf() || !p.getUniqueId().equals(viewer.getUniqueId())) && viewer.canSee(p)) {
                 others.add(p);
             }
         }
@@ -144,7 +144,13 @@ public final class MenuManager {
     private static ItemStack head(UUID owner, Component name, List<Component> lore) {
         ItemStack stack = new ItemStack(Material.PLAYER_HEAD);
         SkullMeta meta = (SkullMeta) stack.getItemMeta();
-        meta.setOwningPlayer(Bukkit.getOfflinePlayer(owner));
+        Player online = Bukkit.getPlayer(owner);
+        if (online != null) {
+            // El perfil del jugador conectado ya trae su skin, asi la cabeza se ve bien al instante.
+            meta.setPlayerProfile(online.getPlayerProfile());
+        } else {
+            meta.setOwningPlayer(Bukkit.getOfflinePlayer(owner));
+        }
         applyText(meta, name, lore);
         stack.setItemMeta(meta);
         return stack;

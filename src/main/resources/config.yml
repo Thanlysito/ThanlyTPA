@@ -20,3 +20,7 @@ request-cooldown: 10
 
 # Play sounds (request received, countdown, teleport).
 sounds: true
+
+# TEST MODE: lets a player send requests to themselves, to try the menus, buttons,
+# countdown and cancel-on-move alone. Keep it false on a real server.
+test-mode-self-requests: false
