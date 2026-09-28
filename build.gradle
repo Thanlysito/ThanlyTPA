@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'dev.thanly'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+}
+
+dependencies {
+    // La API de Paper solo se usa para compilar: el servidor ya la trae.
+    compileOnly 'io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT'
+}
+
+// Minecraft 1.21.x necesita Java 21. Compilamos para Java 21 aunque tengas uno mas nuevo.
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}
+
+processResources {
+    filteringCharset = 'UTF-8'
+    filesMatching('plugin.yml') {
+        expand(version: project.version)
+    }
+}

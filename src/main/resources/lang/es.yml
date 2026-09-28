@@ -1,0 +1,48 @@
+# Mensajes de ThanlyTPA (formato MiniMessage: https://docs.advntr.dev/minimessage/format.html)
+# Variables: <player>, <seconds>
+
+prefix: "<dark_aqua><bold>TPA</bold></dark_aqua> <dark_gray>»</dark_gray> "
+
+players-only: "<red>Solo los jugadores pueden usar este comando."
+player-not-found: "<red>El jugador <white><player></white> no está conectado."
+cannot-self: "<red>No puedes enviarte una solicitud a ti mismo."
+cooldown: "<red>Espera <white><seconds>s</white> antes de enviar otra solicitud."
+reloaded: "<green>ThanlyTPA recargado."
+
+request-sent-there: "<gray>Solicitud enviada a <aqua><player></aqua>. Vence en <white><seconds>s</white>."
+request-sent-here: "<gray>Le pediste a <aqua><player></aqua> que venga a ti. Vence en <white><seconds>s</white>."
+request-received-there: "<aqua><player></aqua> <gray>quiere teletransportarse <white>hacia ti</white>."
+request-received-here: "<aqua><player></aqua> <gray>quiere que <white>tú</white> vayas hacia él."
+
+button-accept: "<green><bold>[ACEPTAR]</bold></green>"
+button-deny: "<red><bold>[RECHAZAR]</bold></red>"
+button-accept-hover: "<green>Clic para aceptar"
+button-deny-hover: "<red>Clic para rechazar"
+
+no-requests: "<gray>No tienes solicitudes pendientes."
+request-not-found: "<red>No tienes una solicitud de <white><player></white>."
+accepted-target: "<green>Aceptaste la solicitud de <white><player></white>."
+accepted-sender: "<aqua><player></aqua> <green>aceptó tu solicitud."
+denied-target: "<gray>Rechazaste la solicitud de <white><player></white>."
+denied-sender: "<aqua><player></aqua> <red>rechazó tu solicitud."
+expired-sender: "<gray>Tu solicitud a <white><player></white> venció."
+expired-target: "<gray>La solicitud de <white><player></white> venció."
+
+teleport-start: "<gray>Teletransportando en <white><seconds> segundos</white>. ¡No te muevas!"
+teleport-countdown: "<aqua>Teletransportando en <white><seconds></white>..."
+teleported: "<green>Te teletransportaste hacia <white><player></white>."
+teleport-cancel-move: "<red>Teletransporte cancelado: te moviste."
+teleport-cancel-damage: "<red>Teletransporte cancelado: recibiste daño."
+teleport-cancel-offline: "<red>Teletransporte cancelado: <white><player></white> se desconectó."
+
+menu-title-players-there: "<dark_aqua>Ir hacia..."
+menu-title-players-here: "<dark_aqua>Traer a un jugador..."
+menu-title-requests: "<dark_aqua>Solicitudes de TPA"
+menu-player-lore: "<gray>Clic para enviar una solicitud"
+menu-no-players: "<red>No hay otros jugadores conectados"
+menu-request-there: "<gray>Quiere ir <white>hacia ti"
+menu-request-here: "<gray>Quiere que <white>tú</white> vayas hacia él"
+menu-request-expires: "<gray>Vence en <white><seconds>s"
+menu-left-accept: "<green>Clic izquierdo: aceptar"
+menu-right-deny: "<red>Clic derecho: rechazar"
+menu-close: "<red>Cerrar"

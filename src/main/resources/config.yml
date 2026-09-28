@@ -1,0 +1,22 @@
+# ThanlyTPA configuration
+
+# Language file inside plugins/ThanlyTPA/lang/ (en or es, or make your own copy).
+language: en
+
+# Seconds the player has to wait before being teleported.
+teleport-delay: 5
+
+# Cancel the teleport if the player moves to another block during the delay.
+cancel-on-move: true
+
+# Cancel the teleport if the player takes damage during the delay.
+cancel-on-damage: true
+
+# Seconds before an unanswered request expires.
+request-timeout: 60
+
+# Seconds a player must wait between sending two requests.
+request-cooldown: 10
+
+# Play sounds (request received, countdown, teleport).
+sounds: true

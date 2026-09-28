@@ -1,0 +1,47 @@
+name: ThanlyTPA
+version: '${version}'
+main: dev.thanly.tpa.ThanlyTPA
+api-version: '1.21'
+author: Thanly
+description: Teleport requests with menus, clickable chat buttons and a teleport delay.
+
+commands:
+  tpa:
+    description: Ask to teleport to a player (no name = open the players menu).
+    usage: /tpa [player]
+    permission: thanlytpa.use
+  tpahere:
+    description: Ask a player to teleport to you (no name = open the players menu).
+    usage: /tpahere [player]
+    permission: thanlytpa.use
+  tpaccept:
+    description: Accept a teleport request.
+    usage: /tpaccept [player]
+    permission: thanlytpa.use
+  tpadeny:
+    description: Deny a teleport request.
+    usage: /tpadeny [player]
+    permission: thanlytpa.use
+  tpamenu:
+    description: Open the menu with your pending teleport requests.
+    usage: /tpamenu
+    aliases: [tpagui]
+    permission: thanlytpa.use
+  tpareload:
+    description: Reload the ThanlyTPA configuration.
+    usage: /tpareload
+    permission: thanlytpa.admin
+
+permissions:
+  thanlytpa.use:
+    description: Use the teleport request commands.
+    default: true
+  thanlytpa.bypass.delay:
+    description: Teleport instantly, without the delay.
+    default: op
+  thanlytpa.bypass.cooldown:
+    description: Send requests without waiting for the cooldown.
+    default: op
+  thanlytpa.admin:
+    description: Reload the plugin.
+    default: op

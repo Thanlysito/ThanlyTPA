@@ -1,0 +1,48 @@
+# ThanlyTPA messages (MiniMessage format: https://docs.advntr.dev/minimessage/format.html)
+# Placeholders: <player>, <seconds>
+
+prefix: "<dark_aqua><bold>TPA</bold></dark_aqua> <dark_gray>»</dark_gray> "
+
+players-only: "<red>Only players can use this command."
+player-not-found: "<red>The player <white><player></white> is not online."
+cannot-self: "<red>You can't send a request to yourself."
+cooldown: "<red>Wait <white><seconds>s</white> before sending another request."
+reloaded: "<green>ThanlyTPA reloaded."
+
+request-sent-there: "<gray>Request sent to <aqua><player></aqua>. It expires in <white><seconds>s</white>."
+request-sent-here: "<gray>You asked <aqua><player></aqua> to teleport to you. It expires in <white><seconds>s</white>."
+request-received-there: "<aqua><player></aqua> <gray>wants to teleport <white>to you</white>."
+request-received-here: "<aqua><player></aqua> <gray>wants <white>you</white> to teleport to them."
+
+button-accept: "<green><bold>[ACCEPT]</bold></green>"
+button-deny: "<red><bold>[DENY]</bold></red>"
+button-accept-hover: "<green>Click to accept"
+button-deny-hover: "<red>Click to deny"
+
+no-requests: "<gray>You don't have any pending requests."
+request-not-found: "<red>You don't have a request from <white><player></white>."
+accepted-target: "<green>You accepted the request from <white><player></white>."
+accepted-sender: "<aqua><player></aqua> <green>accepted your request."
+denied-target: "<gray>You denied the request from <white><player></white>."
+denied-sender: "<aqua><player></aqua> <red>denied your request."
+expired-sender: "<gray>Your request to <white><player></white> expired."
+expired-target: "<gray>The request from <white><player></white> expired."
+
+teleport-start: "<gray>Teleporting in <white><seconds> seconds</white>. Don't move!"
+teleport-countdown: "<aqua>Teleporting in <white><seconds></white>..."
+teleported: "<green>Teleported to <white><player></white>."
+teleport-cancel-move: "<red>Teleport cancelled: you moved."
+teleport-cancel-damage: "<red>Teleport cancelled: you took damage."
+teleport-cancel-offline: "<red>Teleport cancelled: <white><player></white> left the server."
+
+menu-title-players-there: "<dark_aqua>Teleport to..."
+menu-title-players-here: "<dark_aqua>Bring a player here..."
+menu-title-requests: "<dark_aqua>Teleport requests"
+menu-player-lore: "<gray>Click to send a request"
+menu-no-players: "<red>No other players online"
+menu-request-there: "<gray>Wants to teleport <white>to you"
+menu-request-here: "<gray>Wants <white>you</white> to teleport to them"
+menu-request-expires: "<gray>Expires in <white><seconds>s"
+menu-left-accept: "<green>Left-click: accept"
+menu-right-deny: "<red>Right-click: deny"
+menu-close: "<red>Close"
